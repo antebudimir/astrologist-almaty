@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Forum';
+	src: url('../fonts/Forum.woff');
+}
+
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../fonts/MontserratAlternates-Regular.woff');
+}
+
+@font-face {
+	font-family: 'Montserrat Alternates Medium';
+	src: url('../fonts/MontserratAlternates-Medium.woff');
+}
+
+@font-face {
+	font-family: 'Montserrat Alternates Black';
+	src: url('../fonts/MontserratAlternates-Black.woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+h2 {
+	margin-bottom: 1rem;
+	font-family: 'Forum', cursive;
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 0.1rem 0.1rem rgb(156, 155, 155);
+}
+
+h3 {
+	margin-bottom: 1rem;
+	font-size: 1.3rem;
+}
+
+p,
+li {
+	font-family: sans-serif;
+	line-height: 1.7;
+}
+
+a {
+	color: $text-color;
+	text-decoration: none;
+}
+
+#connect {
+	font-family: sans-serif;
+}
+
+.container {
+	font-family: 'Montserrat Alternates Medium';
+}
+
+.tagline {
+	font-family: 'Montserrat Alternates Black';
+}
+
+.menu-item {
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+.client {
+	font-style: italic;
+	font-weight: 600;
+	line-height: 3;
+}
