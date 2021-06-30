@@ -1,0 +1,73 @@
+// Brochure layout
+.wrapper {
+	@include respond-to-width(1024px) {
+		max-width: 70rem;
+		margin: 0 auto;
+	}
+}
+
+#astrology,
+#transforming,
+#reasons,
+#consultation {
+	@include flex-layout(column, nowrap);
+}
+
+#astrology,
+#transforming,
+#reasons,
+#about,
+#feedback {
+	padding: 1rem;
+}
+
+#consultation {
+	padding: 1rem 1rem 0 1rem;
+}
+
+#astrology {
+	background: $secondary-color;
+}
+
+#transforming,
+#feedback {
+	background: $tertiary-color;
+}
+
+#reasons,
+#consultation {
+	@include respond-to-width(1024px) {
+		max-width: 65rem;
+		margin: 0 auto;
+	}
+}
+
+#feedback {
+	@include respond-to-width(1024px) {
+		@include flex-layout(column, nowrap);
+		align-items: center;
+	}
+}
+
+#consultation {
+	margin-bottom: 1rem;
+}
+
+#about {
+	overflow: hidden;
+	background: $secondary-color;
+}
+
+#transforming .wrapper,
+#astrology .wrapper {
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, wrap);
+		justify-content: center;
+	}
+}
+
+#about .wrapper {
+	@include respond-to-width(1024px) {
+		max-width: 63rem;
+	}
+}

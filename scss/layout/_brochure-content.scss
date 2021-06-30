@@ -1,0 +1,129 @@
+// Brochure boxes
+.box,
+.photo-box {
+	border-radius: $border-radius-primary;
+	box-shadow: $box-shadow-1;
+	@include flex-layout(row, nowrap);
+	padding: 1rem;
+	background: $box-primary-color;
+}
+
+.box:not(:last-of-type),
+.reason-item:not(:last-of-type) {
+	margin-bottom: 1rem;
+}
+
+.box-2 {
+	background: $box-secondary-color;
+}
+
+#astrology .box {
+	@include respond-to-width(1024px) {
+		width: 20.3rem;
+		height: 15rem;
+		margin-right: 1rem;
+	}
+
+	@include respond-to-width(1266px) {
+		margin-right: 0;
+
+		&:not(:nth-of-type(3)):not(:nth-of-type(5)) {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.icon {
+	margin-right: 1rem;
+}
+
+.photo-box {
+	margin-top: 1rem;
+
+	@include respond-to-width(1024px) {
+		align-self: center;
+		max-width: 41.5rem;
+		height: auto;
+	}
+}
+
+.photo,
+.feedback-photo {
+	border-radius: $border-radius-primary;
+	box-shadow: $box-shadow-2;
+	width: 100%;
+	height: 100%;
+}
+
+#transforming .box {
+	@include respond-to-width(1024px) {
+		width: 31rem;
+		height: 18.5rem;
+	}
+
+	@include respond-to-width(1229px) {
+		margin-right: 1rem;
+	}
+
+	@include respond-to-width(1268px) {
+		margin-right: 0;
+
+		&:first-of-type {
+			margin-right: 1rem;
+		}
+	}
+}
+
+#reasons .box,
+#feedback .box,
+#consultation .box {
+	@include flex-layout(column, nowrap);
+}
+
+#reasons .box,
+#consultation .box {
+	@include respond-to-width(1024px) {
+		padding: 2rem;
+	}
+}
+
+#about .photo {
+	margin: 0 auto 1rem;
+
+	@include respond-to-width(480px) {
+		float: left;
+		max-width: 20rem;
+		margin: 0.3rem 1rem 0 0;
+	}
+
+	@include respond-to-width(1024px) {
+		margin: 0 1rem 0 0;
+	}
+}
+
+#feedback .box {
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+		align-items: center;
+	}
+
+	@include respond-to-width(1266px) {
+		width: 63rem;
+		height: auto;
+	}
+}
+
+.feedback-photo {
+	max-width: 60rem;
+	margin-bottom: 1rem;
+
+	@include respond-to-width(1024px) {
+		margin-bottom: 0;
+	}
+}
+
+.feedback-text {
+	@include respond-to-width(1024px) {
+		margin-left: 1rem;
+	}
+}

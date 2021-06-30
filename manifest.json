@@ -1,0 +1,37 @@
+{
+	"name": "Ольга | Астролог/таролог Алматы",
+	"short_name": "Ольга aстролог/таролог",
+	"description": "Экспресс-консультация астролога/таролога Алматы. Предсказания по Оракулу Ленорман. Сертификат ''Астрологическое прогнозирование'' школы К. Дарагана 2018 год.",
+	"start_url": "/",
+	"scope": ".",
+	"background_color": "#dbc4cc",
+	"theme_color": "#ffffff",
+	"display": "standalone",
+	"orientation": "portrait",
+	"dir": "ltr",
+	"lang": "ru",
+	"categories": ["астрология", "астротрансформинг", "таро", "Оракул Ленорман"],
+	"icons": [
+		{
+			"src": "img/icons/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/icon-384x384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/icon-256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

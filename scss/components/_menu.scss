@@ -1,0 +1,99 @@
+// Menu
+#nav {
+	z-index: 10000;
+	position: sticky;
+	top: 4rem;
+	@include flex-alignment(space-between, center);
+	height: 5rem;
+	padding: 1rem;
+	background: $primary-color-transparent;
+
+	@include respond-to-width(1024px) {
+		height: 6rem;
+	}
+}
+
+#hamburger {
+	z-index: 100;
+
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.fa-phone,
+.fa-people-arrows,
+.fa-euro-sign,
+.fa-briefcase,
+.fa-heart,
+.fa-dharmachakra,
+.fa-stethoscope,
+.fa-tachometer-alt {
+	font-size: 1.5rem;
+}
+
+.fa-centos {
+	font-size: 1.75rem;
+}
+
+.fa-bars {
+	font-size: 1.75rem;
+}
+
+.fa-times {
+	font-size: 2rem;
+}
+
+#menu {
+	position: fixed;
+	top: 9rem;
+	right: -100%;
+	@include flex-alignment(center, center);
+	width: 100%;
+	height: calc(100% - 8.8rem);
+	background: $primary-color-transparent;
+	transition: all ease-out 0.5s;
+	text-align: center;
+
+	@include respond-to-width(1024px) {
+		position: initial;
+		top: initial;
+		right: initial;
+		width: initial;
+		height: initial;
+		background: initial;
+	}
+}
+
+.menu-items {
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+	}
+}
+
+.menu-item {
+	border: 0.125rem solid $box-primary-color;
+	margin-bottom: 1rem;
+	background: $primary-color-lighter;
+	font-size: 1.5rem;
+	line-height: 2.5;
+
+	@include respond-to-width(1024px) {
+		border: initial;
+		margin-bottom: initial;
+		background: initial;
+	}
+}
+
+.menu-link {
+	padding: 1.1rem 5rem;
+	@include respond-to-width(1024px) {
+		padding: 1rem;
+
+		&:hover,
+		&:focus {
+			box-shadow: $box-shadow-3;
+			transition: box-shadow 300ms ease;
+		}
+	}
+}

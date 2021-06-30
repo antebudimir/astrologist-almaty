@@ -1,0 +1,11 @@
+// js-slidein on scroll-down
+.js-slidein {
+	opacity: 0;
+	transform: translateY(150px);
+	transition: all 400ms ease-in-out;
+}
+
+.js-slidein.show {
+	opacity: 1;
+	transform: translateY(0);
+}

@@ -1,0 +1,26 @@
+#share-button {
+	z-index: 1;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	font-size: 2.7rem;
+
+	&:hover,
+	&:focus {
+		@include pop-out-1;
+	}
+}
+
+.whatsapp {
+	border: none;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	padding: 0 0.5rem;
+	background: rgb(11, 194, 4);
+	color: $tagline-color;
+
+	@include respond-to-width(1024px) {
+		cursor: pointer;
+	}
+}
