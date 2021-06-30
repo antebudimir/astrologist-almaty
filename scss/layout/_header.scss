@@ -1,0 +1,38 @@
+// Header
+#connect {
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	@include flex-alignment(space-evenly, center);
+	height: 4rem;
+	font-size: 1.3rem;
+
+	@include respond-to-width(1024px) {
+		font-size: 1.5rem;
+	}
+}
+
+.connect:hover,
+.connect:focus {
+	box-shadow: 5px 5px 3px $box-secondary-color;
+	padding: 0.5rem;
+	background: $tertiary-color;
+	transform: scale(1.1);
+	transition: box-shadow 300ms ease;
+}
+
+.fa-instagram {
+	border-radius: 0.3rem;
+	width: 2rem;
+	height: 2rem;
+	background: linear-gradient(
+		45deg,
+		rgb(240, 148, 51) 0%,
+		rgb(230, 104, 60) 25%,
+		rgb(220, 39, 67) 50%,
+		rgb(204, 35, 102) 75%,
+		rgb(188, 24, 136) 100%
+	);
+	font-size: 2rem;
+	text-align: center;
+}
