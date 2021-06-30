@@ -33,6 +33,11 @@
 	white-space: nowrap;
 }
 
+@mixin pop-out-1 {
+	transform: scale(1.1);
+	transition: transform 300ms ease;
+}
+
 // Media queries
 @mixin respond-to-width($media) {
 	@media only screen and (min-width: $media) {
