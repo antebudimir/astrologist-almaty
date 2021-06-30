@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Экспресс-консультация астролога/таролога Алматы. Предсказания по Оракулу Ленорман. Сертификат ''Астрологическое прогнозирование'' школы К. Дарагана 2018 год.">
     <meta name="keywords" content="астрология, астротрансформинг, таро, Оракул Ленорман, счастье, гороскоп, любовь, консультация, успех, бизнес, предсказание, эзотерика, деньги, карма, призвание, известность, власть, услуги">
+    <meta name="theme-color" content="#ffffff">
     <meta name="author" content="Ante Budimir">
     <!-- Img preview for sharing -->
     <meta property="og:image" content="./img/profile.jpg">
@@ -19,11 +20,6 @@
     <!-- Stylesheet -->
     <link rel="preload" href="./css/main.css" as="style">
     <link rel="stylesheet" href="./css/main.css">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="preconnect" href="https://ka-f.fontawesome.com">
@@ -42,7 +38,7 @@
 <body>
     <!-- CONNECT WITH ME -->
     <header id="connect">
-        <h2 class="hidden-visually">Связажитесь со мной</h2>
+        <h2 class="hidden-visually">Свяжитесь со мной</h2>
         
         <a class="connect" href="https://instagram.com/l.u.n.a.kz?igshid=fjgam400st02" target="_blank" rel="noopener" title="Связаться в Инстаграм"><i class="fa fa-instagram"></i> l.u.n.a.kz</a>
         <a class="connect" href="tel:+77014300571" title="Позвоните"><i class="fas fa-phone"></i> Позвоните</a>
@@ -51,7 +47,7 @@
     <!-- NAVIGATION container -->
     <nav id="nav">
 
-        <h1>Ольга астролог / <br class="hide-on-desktop">таролог Алматы</h1>
+        <h1>Ольга астролог / <br class="large-screen">таролог Алматы</h1>
 
         <!-- Hamburger -->
         <div id="hamburger">
@@ -61,9 +57,9 @@
         <!-- Menu -->
         <div id="menu">
             <ul class="menu-items">
-                <li class="item"><a href="#astrology" title="Услуги">Услуги</a></li>
-                <li class="item"><a href="#about" title="Обо мне">Обо мне</a></li>
-                <li class="item"><a href="#feedback" title="Отзывы">Отзывы</a></li>
+                <li class="menu-item"><a class="menu-link" href="#astrology" title="Услуги">Услуги</a></li>
+                <li class="menu-item"><a class="menu-link" href="#about" title="Обо мне">Обо мне</a></li>
+                <li class="menu-item"><a class="menu-link" href="#feedback" title="Отзывы">Отзывы</a></li>
             </ul>
         </div>
     </nav>
@@ -72,15 +68,15 @@
     <section id="showcase">
         <!-- Description -->
         <div class="container">
-            <span class="site-description space-it">Астрология</span>
+            <span class="site-description">Астрология</span>
             <span class="site-description">Таро (Оракул Ленорман)</span>
         </div>
         
-        <span class="message">СЧАСТЛИВОЙ БЫТЬ СЕЙЧАС</span>
+        <div class="tagline">СЧАСТЛИВОЙ БЫТЬ СЕЙЧАС</div>
     </section>
 
-    <!-- SERVICES -->
-    <main id="services">  
+    <!-- BROCHURE -->
+    <main id="brochure">  
         <!-- Астрологичекие услуги -->
         <section id="astrology">
 
@@ -149,10 +145,10 @@
                 </div>
             </div>
             
-                <!-- Photo -->
-                <div class="photo-box js-slidein">
-                    <img class="photo" src="./img/group-photo.jpg" alt="Ольга Баймолдина">
-                </div>
+            <!-- Photo -->
+            <div class="photo-box js-slidein">
+                <img class="photo" src="./img/group-photo.jpg" alt="Ольга Баймолдина">
+            </div>
         </section>
 
         <!-- Услуги астротрансформинга -->
@@ -206,7 +202,7 @@
 
         <!-- 5 причин -->
         <section id="reasons" class="js-slidein">
-            <div class="box column">
+            <div class="box">
                 <h2>5 причин, по которым я полезна для Вас</h2>
                 
                 <ol class="reasons">
@@ -228,7 +224,7 @@
                 <div class="wrapper js-slidein">
                     <img class="photo" src="./img/profile.jpg" alt="Ольга Баймолдина фото" loading="lazy">
                     
-                    <div class="text">
+                    <div class="about-text">
                         <p>Здравствуйте, друзья!
                             Работая в управлении персоналом с 2004 года, я приобрела способность интуитивно чувствовать и диагностировать поведение человека. 
                             Я наблюдала, вырабатывала внимательность, эмпатичность, проницательность, психическую гибкость.  Поняла, что людям нужна помощь.
@@ -245,15 +241,12 @@
             </div>
         </section>
 
-        <!-- clearfix -->
-        <div class="clearfix"></div>
-
         <!-- Отзывы -->
         <section id="feedback">
             <h2>Отзывы</h2>
             
             <!-- Отзыв 1 -->
-            <div class="box box-2 column js-slidein">
+            <div class="box box-2 js-slidein">
                 <img class="feedback-photo" src="./img/клиент-Егор.jpg" alt="клиент Егор">
 
                 <div class="feedback-text">
@@ -261,12 +254,12 @@
                         Чувствуется познания в психологии. Очень рад, что обратился именно к Вам - Ваши советы помогли понять свое Я, и 
                         увидеть пути решения проблем. Успехов и здоровья Вам! Побольше таких понимающих и профессиональных астрологов!✨
                         <br>
-                        <span class="italic">Егор, Город Астана, 2020</span></p>
+                        <span class="client">Егор, Город Астана, 2020</span></p>
                 </div>
             </div>
 
             <!-- Отзыв 2 -->
-            <div class="box box-2 column js-slidein">
+            <div class="box box-2 js-slidein">
                 <img class="feedback-photo" src="./img/клиент-Света.jpg" alt="клиент Света">
 
                 <div class="feedback-text">
@@ -276,12 +269,12 @@
                         все достоинства и недостатки. Мне очень понравились твои расклады, подход и техника связки карт с планетами. Буду 
                         тебя всем советовать. Ставлю миллион лайков)))🥰🥳👍
                         <br>
-                        <span class="italic">Орлова Светлана, г. Москва</span></p>
+                        <span class="client">Орлова Светлана, г. Москва</span></p>
                 </div>
             </div>
             
             <!-- Отзыв 3 -->
-            <div class="box box-2 column js-slidein">
+            <div class="box box-2 js-slidein">
                 <img class="feedback-photo" src="./img/клиент-Иван.jpg" alt="клиент Иван">
 
                 <div class="feedback-text">
@@ -291,24 +284,24 @@
                         но не хватало именно помощи и трактовки моего внутреннего состояния со стороны. Огромная благодарность Ольге за проделанную 
                         работу.
                         <br>
-                        <span class="italic">Иван, Город Калининград, 2020</span></p>
+                        <span class="client">Иван, Город Калининград, 2020</span></p>
                 </div>
             </div>
 
             <!-- Отзыв 4 -->
-            <div class="box box-2 column js-slidein">
+            <div class="box box-2 js-slidein">
                 <div class="feedback-text">
                     <p>Ольга, здравствуйте! Огромное спасибо за ваш расклад -консультацию! Благодаря им Вы мне очень помогли в принятии важных 
                         жизненных решениях. Удачи вам! Я теперь ваш постоянный клиент.
                         <br>
-                        <span class="italic">Ольга, Алматы</span></p>
+                        <span class="client">Ольга, Алматы</span></p>
                 </div>
             </div>
         </section>
 
         <!-- Договоренности о консультациях -->
         <section id="consultation">
-            <div class="box column js-slidein">
+            <div class="box js-slidein">
                 
                 <h2>Договоренности о консультациях</h2>
 
@@ -323,8 +316,8 @@
     </main>
 
     <!-- WhatsApp BUTTON -->
-    <div id="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=77014300571" target="_blank" rel="noopener" title="Связаться в WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <div id="share-button">
+        <a class="whatsapp" href="https://api.whatsapp.com/send?phone=77014300571" target="_blank" rel="noopener" title="Связаться в WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
 
     <!-- FOOTER -->
