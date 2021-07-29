@@ -58,19 +58,16 @@ if (window.innerWidth < 1024) {
 			nav.style.borderBottom = '1px solid rgb(169, 137, 152)';
 			bodyOverflow.style.overflow = 'hidden';
 		} else {
-			menu.style.right = '-100%';
-			icon.classList.remove('fa-times');
-			icon.classList.add('fa-bars');
-			icon.style.color = 'unset';
-			icon.style.transition = 'color 300ms ease-in';
-			tagline.style.display = 'block';
-			nav.style.borderBottom = 'none';
-			bodyOverflow.style.overflow = 'auto';
+			slideOut();
 		}
 	});
 
 	//Outside click
 	menu.addEventListener('click', () => {
+		slideOut();
+	});
+
+	function slideOut() {
 		menu.style.right = '-100%';
 		icon.classList.remove('fa-times');
 		icon.classList.add('fa-bars');
@@ -78,7 +75,7 @@ if (window.innerWidth < 1024) {
 		tagline.style.display = 'block';
 		nav.style.borderBottom = 'none';
 		bodyOverflow.style.overflow = 'auto';
-	});
+	}
 }
 
 // Change BG colors of #connect & #navigation to solid ones
