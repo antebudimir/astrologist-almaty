@@ -1,0 +1,17 @@
+@keyframes slideIn {
+	from {
+		transform: skewX(120deg);
+	}
+	to {
+		transform: skewX(0deg);
+	}
+}
+
+@keyframes slideOut {
+	from {
+		transform: skewX(0deg);
+	}
+	to {
+		transform: skewX(120deg);
+	}
+}

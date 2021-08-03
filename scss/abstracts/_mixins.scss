@@ -5,7 +5,6 @@
 }
 
 @mixin flex-alignment($justify, $align) {
-	display: flex;
 	justify-content: $justify;
 	align-items: $align;
 }
