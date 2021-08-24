@@ -2,4 +2,4 @@
 
 A brochure website for an astrologist/tarologist from Almaty, Kazakhstan.
 
-Live preview: https://astrology.antebudimir.com/
+Live preview: https://astrology.com.kz/
